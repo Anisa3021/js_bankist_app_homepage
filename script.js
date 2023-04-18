@@ -13,4 +13,4 @@ const tabsContent = document.querySelector(".operations__content");
 
 /////////////////////////////
 
-/// code starts here
+/// code starts here 1
