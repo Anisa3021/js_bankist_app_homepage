@@ -12,5 +12,3 @@ const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelector(".operations__content");
 
 /////////////////////////////
-
-/// code starts here 1
