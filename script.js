@@ -116,3 +116,28 @@ const headerObsever = new IntersectionObserver(stickyNav, {
 });
 
 headerObsever.observe(header);
+
+/////////////////////////////
+//Image loading
+const img = document.querySelectorAll("img[data-src]");
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.src = entry.target.dataset.src;
+
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+  });
+
+  observer.unobserver(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: "200px",
+});
+img.forEach((img) => imgObserver.observe(img));
