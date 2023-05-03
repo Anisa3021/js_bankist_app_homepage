@@ -2,6 +2,6 @@
 
 Simple html page with animations via JS,
 
-https://bankist-d280f.web.app/
+https://bankist-1111.web.app/index.html
 
 ![Tirle](./card.jpg)

@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "bankist-1111",
+    "public": ".",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
